@@ -14,10 +14,15 @@
     "build": "tsc",
     "lint": "yarn lint:prettier",
     "lint:prettier": "yarn prettier -l '{src,test}/**/*.{ts,js,md,json}'",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.6.3"
   }
 }
