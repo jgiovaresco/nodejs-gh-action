@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-gh-action",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jgiovaresco/nodejs-gh-action.git",
+  "author": "Julien Giovaresco <dev@giovaresco.fr>",
+  "license": "MIT",
+  "files": [
+    "dist/fixtures/**/*.{js,ts}",
+    "dist/index.{d.ts,js}",
+    "dist/src/**/*.{js,ts}"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "yarn lint:prettier",
+    "lint:prettier": "yarn prettier -l '{src,test}/**/*.{ts,js,md,json}'",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  }
+}
