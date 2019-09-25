@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-gh-action",
+  "name": "@jgiovaresco/nodejs-gh-action",
   "version": "1.0.0",
   "main": "dist/index.js",
   "repository": "https://github.com/jgiovaresco/nodejs-gh-action.git",
